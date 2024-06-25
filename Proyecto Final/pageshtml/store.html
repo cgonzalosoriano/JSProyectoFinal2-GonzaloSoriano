@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="shortcut icon" href="../media/favicon.png" type="image/x-icon">
+</head>
+<body class="storeBody">
+    <header>
+        <nav class="nav">
+            <ul class="navbar">
+                <div class="menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./store.html">Tienda</a></li>
+                    <li><a href="./reviews.html">Review´s</a></li>
+                </div>
+                <div class="logo">
+                    <li><a href="../index.html"><img src="../media/Logo BlackRider.png" alt="Logo"></a></li>
+                </div>
+                <div class="cart">
+                    <li id="cart_icon"><a href="../pageshtml/cart.html"><img src="../media/Cart.png" alt="Cart"></a></li>
+                    <li id="mail_icon"><a href=""><img src="../media/mail.png" alt="contact"></a></li>
+                    <li><a href=""><img src="../media/Instagram.png" alt="Instagram"></a></li>
+                    <li><a href=""><img src="../media/tiktok.png" alt="tiktok"></a></li>
+                    <li><a href=""><img src="../media/youtube.png" alt="youtube"></a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+<main class="storeMain">
+    <h1 class="storeh1">Tienda Black Rider</h1>
+    <section id="destacados" class="container">
+        <h2 class="section-title">Productos Destacados</h2>
+        <div class="carousel-container">
+            <button class="carousel-btn left-btn">&lt;</button>
+            <div class="carousel">
+                <!-- Productos destacados irán aquí -->
+            </div>
+            <button class="carousel-btn right-btn">&gt;</button>
+        </div>
+    </section>
+
+    <!-- Sección de todos los productos -->
+    <section id="todos-productos" class="container">
+        <h2 class="section-title">Todos los Productos de Black Rider</h2>
+        <div class="imgSection2">
+            <img src="../media/favicon.png" alt="logo">
+        </div>
+        <!-- Filtros -->
+        <div class="filters">
+            <select id="categoryFilter" class="filter-select">
+                <option value="all">Todas las Categorías</option>
+                <option value="baules">Baules</option>
+                <option value="pantallas">Pantallas CarPlay</option>
+                <option value="intercomunicadores">Intercomunicadores</option>
+                <option value="camperas">Camperas</option>
+            </select>
+            <select id="priceFilter" class="filter-select">
+                <option value="default">Ordenar por Precio</option>
+                <option value="asc">Menor a Mayor</option>
+                <option value="desc">Mayor a Menor</option>
+            </select>
+        </div>
+        <!-- Productos en tarjetas -->
+        <div class="product-grid" id="productGrid">
+            <!-- Tarjetas de productos irán aquí -->
+        </div>
+    </section>
+
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../store.js"></script>
+</main>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
